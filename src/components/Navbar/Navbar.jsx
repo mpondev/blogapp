@@ -1,7 +1,7 @@
 import styles from './Navbar.module.scss';
 
 function Navbar() {
-  return <div>Navbar</div>;
+  return <div className={styles.container}>Navbar</div>;
 }
 
 export default Navbar;

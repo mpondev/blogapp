@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import AuthLinks from '../AuthLinks/AuthLinks';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+
 import styles from './Navbar.module.scss';
 
 function Navbar() {
@@ -15,9 +16,15 @@ function Navbar() {
       <div className={styles.logo}>mponblog</div>
       <div className={styles.links}>
         <ThemeToggle />
-        <Link to="/">Homepage</Link>
-        <Link to="/">Contact</Link>
-        <Link to="/">About</Link>
+        <Link to="/" className={styles.link}>
+          Homepage
+        </Link>
+        <Link to="/" className={styles.link}>
+          Contact
+        </Link>
+        <Link to="/" className={styles.link}>
+          About
+        </Link>
         <AuthLinks />
       </div>
     </div>

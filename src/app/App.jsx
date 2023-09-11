@@ -6,6 +6,7 @@ import Footer from '../components/Footer/Footer';
 import Home from './Home/Home';
 
 import styles from '../global.module.scss';
+import BlogPage from './blog/BlogPage';
 
 const Layout = () => {
   return (
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+      },
+      {
+        path: '/blog',
+        element: <BlogPage />,
       },
     ],
   },

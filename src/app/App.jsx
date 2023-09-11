@@ -4,9 +4,10 @@ import ThemeProvider from '../providers/ThemeProvider';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import Home from './Home/Home';
+import BlogPage from './Blog/BlogPage';
+import SinglePage from './SinglePage/SinglePage';
 
 import styles from '../global.module.scss';
-import BlogPage from './blog/BlogPage';
 
 const Layout = () => {
   return (
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: '/blog',
         element: <BlogPage />,
+      },
+      {
+        path: '/page',
+        element: <SinglePage />,
       },
     ],
   },

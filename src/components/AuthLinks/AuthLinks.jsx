@@ -6,7 +6,7 @@ import styles from './AuthLinks.module.scss';
 function AuthLinks() {
   const [open, setOpen] = useState(false);
   // temp
-  const status = 'notauthenticated';
+  const status = 'authenticated';
 
   return (
     <>

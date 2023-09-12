@@ -6,6 +6,7 @@ import Footer from '../components/Footer/Footer';
 import Home from './Home/Home';
 import BlogPage from './Blog/BlogPage';
 import SinglePage from './SinglePage/SinglePage';
+import Login from './Login/Login';
 
 import styles from '../global.module.scss';
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: '/page',
         element: <SinglePage />,
+      },
+      {
+        path: '/login',
+        element: <Login />,
       },
     ],
   },
